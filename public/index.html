@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VALD</title>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/14b69fd239.js" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- STYLES -->
@@ -55,29 +57,46 @@
         </section>
 
         <!-- ***** SECTION 2 : ACTUALITE ***** -->
-        <section id="actualite" class="d-flex align-items-center justify-content-around py-5 bg-secondary text-white">
-            <div>
-                <h2>Actualité</h2>
-                <h3>Date JJ/MM/AA</h3>
-                <p class="fs-5">
-                    Texte introductif pour Précommander l'album
-                </p>
-                <button class="btn btn-light">Précommander</button>
-            </div>
-
-            <!-- placeholder div en attendant img -->
-            <div class="actualite__picture d-flex align-items-center justify-content-center bg-white text-black">
-                <h3>PHOTO DE LA POCHETTE</h3>
+        <section id="actualite" class="p-5 bg-secondary text-white">
+            <h2>Actualité</h2>
+            
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="">
+                    <h3>Date JJ/MM/AA</h3>
+                    <p class="my-5 fs-5">
+                        Texte introductif pour Précommander l'album
+                    </p>
+                    <button class="btn btn-light">Précommander</button>
+                </div>
+    
+                <!-- placeholder div en attendant img -->
+                <div class="actualite__picture d-flex align-items-center justify-content-center bg-white text-black">
+                    <h3>PHOTO DE LA POCHETTE</h3>
+                </div>
             </div>
         </section>
 
         <!-- ***** SECTION 3 : DERNIERS CLIPS ***** -->
-        <section id="derniers-clips" class="d-flex bg-secondary text-white">
-            <h2 class="d-flex justify-content-center w-100">Derniers Clips</h2>
+        <section id="derniers-clips" class="d-flex flex-column p-5 bg-secondary text-white">
+            <h2 class="d-flex justify-content-center w-100 mb-5">Derniers Clips</h2>
+
+            <div class="d-flex justify-content-between">
+                <article class="clip-article d-flex align-items-center justify-content-center bg-light">
+                    <i class="fa-solid fa-circle-play fs-1 text-dark"></i>
+                </article>
+
+                <article class="clip-article d-flex align-items-center justify-content-center bg-light">
+                    <i class="fa-solid fa-circle-play fs-1 text-dark"></i>
+                </article>
+
+                <article class="clip-article d-flex align-items-center justify-content-center bg-light">
+                    <i class="fa-solid fa-circle-play fs-1 text-dark"></i>
+                </article>
+            </div>
         </section>
 
         <!-- ***** SECTION 4 : EVENEMENT ***** -->
-        <section id="evenement" class="d-flex align-items-center justify-content-around py-5 bg-secondary text-white">
+        <section id="evenement" class="d-flex align-items-center justify-content-between p-5 bg-secondary text-white">
             <!-- placeholder div en attendant img -->
             <div class="actualite__picture d-flex align-items-center justify-content-center bg-white text-black">
                 <h3>AFFICHE DE LA TOURNEE</h3>
@@ -99,8 +118,34 @@
 
 
     <!-- ////////// FOOTER ////////// -->
-    <footer>
+    <footer class="bg-secondary">
+        <div class="row g-0">
+            <div class="col">
+                <h3>A PROPOS</h3>
+    
+                <ul>
+                    <li><a href="#">Recheche</a></li>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Mentions Légales</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                    <li><a href="#">Service Client</a></li>
+                </ul>
+            </div>
+    
+            <div class="col">
+                <h3>NEWSLETTER</h3>
 
+                <label for="#">Inscrivez-vous pour être alerté(e) en
+                    avant-première des exclusivités de Vald !</label>
+                <input type="text" value="Entrez votre email">
+                <button class="btn btn-light">S'inscrire</button>
+            </div>
+
+            <div class="col">
+                <h3>Suivez Vald</h3>
+            </div>
+        </div>
+        
     </footer>
 </body>
 </html>
